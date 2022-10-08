@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 console.log("".length);
 
-function GifExpertApp(props) {
+function AddCategory(props) {
   const [categories, setCategories] = useState([
     "One Punch",
     "Samurai X",
@@ -35,4 +35,4 @@ function GifExpertApp(props) {
   );
 }
 
-export default GifExpertApp;
+export default AddCategory;
