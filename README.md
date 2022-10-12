@@ -1,2 +1,2 @@
 # Gif App
-A grafic app built on react you can consulting any gifs from the gif api
+- A graphic app built on react, you can consult any gifs from the gif api
