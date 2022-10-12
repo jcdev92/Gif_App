@@ -1,18 +1,14 @@
 import "./App.css";
-import AddCategory       from "./components/AddCategory.jsx";
-import React, {useState} from "react";
-import {GridGif}         from "./components/GridGif";
+import React, { useState } from "react";
+import { AddCategory, GridGif } from "./components";
 
-function GifExpertApp() {
-  const [categories, setCategories] = useState([
-    "One Punch"
-  ]);
+export function GifExpertApp() {
+  const [categories, setCategories] = useState(["One Punch"]);
 
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return;
     setCategories([newCategory, ...categories]);
   };
-
 
   return (
     <div className="App">
@@ -24,5 +20,3 @@ function GifExpertApp() {
     </div>
   );
 }
-
-export default GifExpertApp;

@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-console.log("".length);
-
-function AddCategory({ onAddCategory }) {
+export function AddCategory({ onAddCategory }) {
 
   const submitCategory = (e) => {
     e.preventDefault();
@@ -27,5 +24,3 @@ function AddCategory({ onAddCategory }) {
     </div>
   );
 }
-
-export default AddCategory;
