@@ -3,4 +3,7 @@ module.exports = {
         [ '@babel/preset-env', { targets: { esmodules: true } } ],
         [ '@babel/preset-react', { runtime: 'automatic' } ],
     ],
+    "plugins": [
+    ["babel-plugin-transform-import-meta", { "module": "ES6" }]
+    ]
 };
