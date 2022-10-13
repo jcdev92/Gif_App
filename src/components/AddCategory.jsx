@@ -1,17 +1,15 @@
 export function AddCategory({ onAddCategory }) {
-
   const submitCategory = (e) => {
     e.preventDefault();
 
     const inputValue = e.target[0].value;
     const inputCategory = inputValue.trim();
 
-    if (inputCategory.length <=1) return;
+    if (inputCategory.length <= 1) return;
     onAddCategory(inputCategory);
 
     // clear input
     e.target.category.value = "";
-
   };
 
   return (
