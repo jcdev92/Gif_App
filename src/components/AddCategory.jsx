@@ -1,4 +1,7 @@
+import PropTypes from "prop-types";
+
 export function AddCategory({ onAddCategory }) {
+
   const submitCategory = (e) => {
     e.preventDefault();
 
@@ -15,10 +18,14 @@ export function AddCategory({ onAddCategory }) {
   return (
     <div>
       <h1>GifExpertApp</h1>
-      <form onSubmit={submitCategory}>
-        <input type="text" name="category" />
+      <form onSubmit={submitCategory} aria-label="form">
+        <input type="text" name="category"/>
         <button type="submit">Add</button>
       </form>
     </div>
   );
+}
+
+AddCategory.propTypes = {
+    onAddCategory: PropTypes.func.isRequired,
 }
