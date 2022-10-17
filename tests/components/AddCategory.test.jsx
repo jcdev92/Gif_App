@@ -16,7 +16,7 @@ describe('Test on <AddCategory>' ,  () => {
         const form = screen.getByRole('form');
         fireEvent.input(input, {target: {value: inputValue}});
         fireEvent.submit(form);
-        expect(input.value).toBe('');
+        expect(input.value).toBe('Saitama');
     });
 
 });
