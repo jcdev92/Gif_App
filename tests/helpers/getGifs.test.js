@@ -1,4 +1,5 @@
 import { getGifs } from "../../src/helpers/getGif.js";
+import { describe, test } from "vitest";
 
 describe('Tests in getGifs()', () => {
     test('should return an array of gifs',  async () => {
