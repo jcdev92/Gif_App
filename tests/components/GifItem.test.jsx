@@ -1,5 +1,6 @@
 import { render , screen } from "@testing-library/react";
 import { GifItem }         from "../../src/components";
+import { describe, test }         from "vitest/browser";
 
 describe('Test on <GifItem />', () => {
     const title = 'A Title';

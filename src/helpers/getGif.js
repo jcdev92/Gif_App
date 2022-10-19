@@ -1,5 +1,3 @@
-const testingURL_BASE = process.env.VITE_APP_BASE_URL;
-const testingURL_API = process.env.VITE_APP_API_KEY;
 const URL_BASE = import.meta.env.VITE_APP_BASE_URL;
 const URL_API = import.meta.env.VITE_APP_API_KEY;
 

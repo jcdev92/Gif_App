@@ -1,5 +1,6 @@
 import { fireEvent , render , screen } from "@testing-library/react";
 import { AddCategory }                 from "../../src/components";
+import { describe, test }                     from "vitest/browser";
 
 describe('Test on <AddCategory>' ,  () => {
     test('should change the value of the text box', () => {
